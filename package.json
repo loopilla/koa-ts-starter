@@ -1,0 +1,32 @@
+{
+  "name": "koa-ts-starter",
+  "version": "0.0.1",
+  "description": "koa ts starter",
+  "main": "app.ts",
+  "scripts": {
+    "build": "tslint --project . && tsc",
+    "run": "node dist/app.js",
+    "watch": "cross-env NODE_ENV=development nodemon --watch src/**/* -e ts,tsx,json --exec ts-node src/app.ts"
+  },
+  "keywords": [
+    "koa",
+    "starter",
+    "typescript",
+    "ts"
+  ],
+  "author": "loopilla@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/koa": "^2.11.0",
+    "@types/koa-router": "^7.0.42",
+    "cross-env": "^6.0.3",
+    "nodemon": "^2.0.2",
+    "ts-node": "^8.5.4",
+    "tslint": "^5.20.1",
+    "typescript": "^3.7.3"
+  },
+  "dependencies": {
+    "koa": "^2.11.0",
+    "koa-router": "^7.4.0"
+  }
+}
